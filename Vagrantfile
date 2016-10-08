@@ -1,12 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-$script = <<SCRIPT
-echo provisioning...
-sudo -H -u vagrant bash -i -c 'gem install jekyll'
-echo finished provisioning!
-SCRIPT
-
 Vagrant.configure("2") do |config|
 
     config.vm.box = "scotch/box"
