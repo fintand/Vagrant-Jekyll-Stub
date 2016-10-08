@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
-apt-get update
-gem install jekyll
+echo provisioning...
+sudo -H -u vagrant bash -i -c 'gem install jekyll'
+echo finished provisioning!
